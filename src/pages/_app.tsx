@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import ToastNotification from "components/shared/ToastNotification";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import NavigationBar from "components/shared/NavigationBar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = createTheme({
@@ -9,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       primary: {
         light: "#6FB6F6",
         main: "#0082F0",
-        dark: "#000",
+        dark: "#3B4956",
       },
       secondary: {
         light: "#fff",
@@ -36,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <ToastNotification />
+      <NavigationBar />
       <Component {...pageProps} />
     </ThemeProvider>
   );
