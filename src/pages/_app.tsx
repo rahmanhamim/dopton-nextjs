@@ -18,20 +18,20 @@ function MyApp({ Component, pageProps }: AppProps) {
         dark: "#75E2E8 ",
       },
     },
-    components: {
-      MuiButton: {
-        variants: [
-          {
-            props: { variant: "contained" },
-            style: {
-              boxShadow: "0px 5px 8px rgba(31, 2, 64, 0.08)",
-              borderRadius: "4px",
-              padding: ".6rem 1.2rem",
-            },
-          },
-        ],
-      },
-    },
+    // components: {
+    //   MuiButton: {
+    //     variants: [
+    //       {
+    //         props: { variant: "contained" },
+    //         style: {
+    //           textTransform: "none",
+    //           borderRadius: "4px",
+    //           padding: ".6rem 1.2rem",
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
   });
 
   return (

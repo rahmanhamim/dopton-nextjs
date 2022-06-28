@@ -24,3 +24,15 @@ h4 {
   font-family: "Vazirmatn", sans-serif;
   color: #001324;
 }
+
+:root {
+  --colormain: #0082f0;
+  --colorsecondary: #31d3dd;
+  --colorwhite: #ffffff;
+  --colornavlink: #3b4956;
+  --toastcolor: #003765;
+  --bodyfontcolor: #2e3d4b;
+  --bodyfontgray: #66717c;
+  --titlecolor: #001324;
+  --graycolor: #f5f6f6;
+}
