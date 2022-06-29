@@ -24,7 +24,7 @@ const NavigationBar = () => {
         position="static"
         sx={{ bgcolor: "#fff", color: "primary.dark", py: 1 }}
       >
-        <Container maxWidth="xl">
+        <Container>
           <Toolbar sx={{ display: "flex", p: "0 !important" }}>
             <Box flexGrow="1" sx={{ display: "flex", alignItems: "center" }}>
               <Box
