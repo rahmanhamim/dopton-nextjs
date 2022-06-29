@@ -85,8 +85,36 @@ const SignUpSection = () => {
   };
 
   return (
-    <Box>
-      <Grid container>
+    <>
+      <Grid
+        container
+        sx={{
+          position: "relative",
+          overflowX: "hidden",
+        }}
+      >
+        <Box sx={{ position: "absolute", right: "32%", top: "5%" }}>
+          <Image
+            src="/assets/imgs/icons/signup-ellipse-1.png"
+            width="100px"
+            height="100px"
+            alt="ellipse"
+          />
+        </Box>
+        <Box
+          sx={{
+            position: "absolute",
+            right: "-3%",
+            top: "20%",
+          }}
+        >
+          <Image
+            src="/assets/imgs/icons/signup-ellipse-2.png"
+            width="240px"
+            height="240px"
+            alt="ellipse"
+          />
+        </Box>
         <Grid item xs={8} lg={4}>
           <Box
             sx={{
@@ -333,7 +361,7 @@ const SignUpSection = () => {
           </Box>
         </Grid>
       </Grid>
-    </Box>
+    </>
   );
 };
 
