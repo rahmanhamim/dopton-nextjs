@@ -19,6 +19,7 @@ const ButtonPrimary = ({ icon, text, margin }: Props) => {
         backgroundImage: "linear-gradient(94.66deg, #0082f0 0%, #6fb6f6 100%)",
         transition: "0.3s",
         backgroundSize: "200% auto",
+        textTransform: "none",
         "&:hover": {
           backgroundPosition: "right center",
         },
