@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import ToastNotification from "components/shared/ToastNotification";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import NavigationBar from "components/shared/NavigationBar";
+import Footer from "components/shared/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = createTheme({
@@ -39,6 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ToastNotification />
       <NavigationBar />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   );
 }
