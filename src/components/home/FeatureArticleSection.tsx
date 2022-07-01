@@ -103,7 +103,7 @@ const FeatureArticleSection = () => {
           </Typography>
           <Box
             sx={{
-              width: "30%",
+              width: "13%",
               height: "2px",
               m: 2,
 
