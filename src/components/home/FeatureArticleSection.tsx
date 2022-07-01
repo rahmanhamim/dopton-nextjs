@@ -85,7 +85,44 @@ const FeatureArticleSection = () => {
   ];
 
   return (
-    <Box>
+    <Box
+      sx={{
+        position: "relative",
+        overflowX: "hidden",
+        my: 7,
+      }}
+    >
+      <Box
+        sx={{
+          position: "absolute",
+          right: "-2%",
+          top: "15%",
+          transform: "rotate(-20deg)",
+          zIndex: "-10",
+        }}
+      >
+        <Image
+          src="/assets/imgs/icons/tab-ellipse.svg"
+          width="200px"
+          height="180px"
+          alt="svg icon"
+        />
+      </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: "0",
+          left: "-2%",
+          zIndex: "-10",
+        }}
+      >
+        <Image
+          src="/assets/imgs/icons/featured-ellipse-2.svg"
+          width="168.03px"
+          height="180px"
+          alt="svg icon"
+        />
+      </Box>
       <Container>
         <Box
           sx={{
@@ -148,8 +185,8 @@ const FeatureArticleSection = () => {
 
         <Box
           sx={{
-            my: 8,
-            // border: "1px solid red",
+            mt: 8,
+            mb: 5,
           }}
         >
           <Slider {...settings} ref={sliderRef}>
@@ -202,6 +239,7 @@ const FeatureArticleSection = () => {
             ))}
           </Slider>
         </Box>
+        <ButtonPrimaryLight text="More Articles" />
       </Container>
     </Box>
   );

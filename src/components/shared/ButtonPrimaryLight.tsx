@@ -13,6 +13,7 @@ const ButtonPrimaryLight = ({ icon, text, margin }: Props) => {
       sx={{
         padding: "0.5em 1.2em",
         border: "1px solid #0281EF",
+        background: "#fff",
         m: `${margin}`,
         boxShadow: "none",
         transition: "0.3s",
